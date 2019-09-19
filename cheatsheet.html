@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cheatsheet</title>
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/atom-one-dark.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b2181122f.js" crossorigin="anonymous"></script>
+    <!-- Code snippet styilng -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.13.0/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <nav class="main">
+        <ul class="navbar">
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem activeNav"><a href="#">Cheat sheet</a></li>
+            <li class="navItem"><a href="/comingsoon.html">BS4 Cheat sheet</a></li>
+            <li class="navItem"><a href="/comingsoon.html">HTML Projects</a></li>
+            <li class="navItem"><a href="/comingsoon.html">JavaScript Projects</a></li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <section class="cheat-header">
+        <h1 class="display">Cheat sheet</h1>
+        <h4>
+            This page is built to be a resource for you as you're learning how to write HTML, CSS, and JavaScript.
+            Working in descending order, there are code snippets and accompanying examples of what the code produces.
+            <span class="emphasis">You are allowed to copy/paste as needed.</span> While it will take some practice to
+            understand how these pieces fit together, and we'll do other things in class to learn their syntax, you are
+            welcome to use this page as a "cheat sheet."
+        </h4>
+    </section>
+    <!-- Sticky nav for selecting languages -->
+    <div class="lang-nav">
+        <ul>
+            <li><a href="#html-cheat">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JS</a></li>
+        </ul>
+    </div>
+    <!-- HTML Examples, code snippets on one side, production version on other -->
+    <section class="html-cheat" id="html-cheat">
+        <h2>HTML</h2>
+        <h4>Hypertext Markup Language (HTML) is the backbone of any website. On this page, you'll be able to find every
+            component we talk about for our projects. Also, to make it easier, there's a list included that
+            will take you directly to the component you're looking for.</h4>
+        <!-- First code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Paragraphs of Text</h4>
+                <p>This is the easiest way of getting text into your project. Use this tag whenever you want to just
+                    include some basic text.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+&ltp&gt
+    Hello there! I'm some text.
+&lt/p&gt
+                </code></pre>
+            </div>
+            <div class="code-card">
+                <p>Hello there! I'm some text.</p>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- Code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Headings</h4>
+                <p>Headings offer a bit more styling. These decrease in size depending on your CSS. They work, in
+                    decreasing size, from 1-6.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+&lth1&gtOne&lt/h1&gt
+&lth2&gtTwo&lt/h2&gt
+&lth3&gtThree&lt/h3&gt
+&lth4&gtFour&lt/h4&gt
+&lth5&gtFive&lt/h5&gt
+&lth6&gtSix&lt/h6&gt
+                </code></pre>
+            </div>
+            <div class="code-card">
+                <h1 style="margin:0; font-family: 'Nunito Sans', sans-serif;">One</h1>
+                <h2 style="margin:0;">Two</h2>
+                <h3 style="margin:0;">Three</h3>
+                <h4 style="margin:0;">Four</h4>
+                <h5 style="margin:0;">Five</h5>
+                <h6 style="margin:0;">Six</h6>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- Code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Unordered Lists</h4>
+                <p>An unordered list is just a series of bullets - there's no real indexing of the items in the list;
+                    thus, it's "unordered."</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+&ltul&gt
+    &ltli&gtI'm an item!&lt/li&gt
+    &ltli&gtMe, too!&lt/li&gt
+&lt/ul&gt
+                </code></pre>
+            </div>
+            <div class="code-card">
+                <ul>
+                    <li>I'm an item!</li>
+                    <li>Me, too!</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- Code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Ordered Lists</h4>
+                <p>On the other hand, ordered lists are those who have ranked items (i.e., an order to them).</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+&ltol&gt
+    &ltli&gtFirst&lt/li&gt
+    &ltli&gtSecond&lt/li&gt
+    &ltli&gtThird&lt/li&gt
+&lt/ol&gt
+                </code></pre>
+            </div>
+            <div class="code-card">
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ol>
+            </div>
+        </div>
+        <!-- End of pair -->
+    </section>
+
+</body>
+
+</html>
