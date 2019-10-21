@@ -396,8 +396,8 @@ code {
 }
 
 .html-proj-video:hover {
-    border: solid 1px black;
-    transform: scale(1.01);
+    /* border: solid 1px black; */
+    /* transform: scale(1.01); */
     transition: transform .4s;
     cursor: pointer;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1) !important;
