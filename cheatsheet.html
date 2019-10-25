@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <!-- Header -->
-    <section class="cheat-header">
+    <section class="cheat-header" id="cheat-header">
         <h1 class="display">Cheat sheet</h1>
         <h4>
             This page is built to be a resource for you as you're learning how to write HTML, CSS, and JavaScript.
@@ -44,7 +44,7 @@
     <div class="lang-nav">
         <ul>
             <li><a href="#html-cheat">HTML</a></li>
-            <li><a href="#">CSS</a></li>
+            <li><a href="#css-cheat">CSS</a></li>
             <li><a href="#">JS</a></li>
         </ul>
     </div>
@@ -147,6 +147,235 @@
                     <li>Second</li>
                     <li>Third</li>
                 </ol>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- Code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Anchor Tags</h4>
+                <p>Want to find a way to get away? Anchor tags will link to other pages or other sections of the same
+                    page. "href" is an <strong>attribute</strong> that stands for hyperlink reference and is the address
+                    you're taking the user to.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+&lta href="https://www.google.com"&gtClick me to go to Google!&lt/a&gt
+&lta href="#cheat-header">Beam me back up!&lt/a&gt
+                </code></pre>
+            </div>
+            <div class="code-card">
+                <a href="https://www.google.com">Click me to go to Google!</a>
+                <a href="#cheat-header">Beam me back up!</a>
+            </div>
+        </div>
+        <!-- End of pair -->
+    </section>
+
+
+    <!-- HTML Examples, code snippets on one side, production version on other -->
+    <section class="html-cheat" id="css-cheat">
+        <h2>CSS</h2>
+        <h4>Cascading Style Sheets (CSS) make our page look clean and give it a definite style. While HTML makes up the
+            skeleton of our page, CSS makes it look good! The syntax of CSS differs from that of HTML, but is pretty
+            quick to pick up once you know the names of different properties.</h4>
+        <!-- First code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Background Color</h4>
+                <p>The quickest way of telling if something has been affected by CSS is to change its background color.
+                    Here, we give a block a red background.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+&ltdiv class="block">
+    I have a red background!
+&lt/div>
+
+&ltstyle>
+    .block {
+        background: red;
+    }
+&lt/style>
+                </code></pre>
+            </div>
+            <div class="code-card">
+                <div class="block">
+                    I have a red background!
+                </div>
+
+                <style>
+                    .block {
+                        background: red;
+                    }
+                </style>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- First code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Text Color</h4>
+                <p>To change the color of the text, simply modify the "color" property of an element.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+    &ltdiv class="block">
+        I have a red background AND white text!
+    &lt/div>
+    
+    &ltstyle>
+        .block {
+            background: red;
+            color: white;
+        }
+    &lt/style>
+                    </code></pre>
+            </div>
+            <div class="code-card">
+                <div class="block-text">
+                    I have a red background AND white text!
+                </div>
+
+                <style>
+                    .block-text {
+                        background: red;
+                        color: white;
+                    }
+                </style>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- First code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Padding</h4>
+                <p>Things can get really squished sometimes, so we use "padding" to modify the amount of space inside an
+                    element.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+        &ltdiv class="block">
+            I have a red background AND white text!
+        &lt/div>
+        
+        &ltstyle>
+            .block {
+                background: red;
+                color: white;
+                padding: 10px;
+            }
+        &lt/style>
+                        </code></pre>
+            </div>
+            <div class="code-card">
+                <div class="block-text-padding">
+                    I have a red background AND white text!
+                </div>
+
+                <style>
+                    .block-text-padding {
+                        background: red;
+                        color: white;
+                        padding: 10px;
+                    }
+                </style>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- First code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Margin</h4>
+                <p>Alternatively, maybe we want to change how much space is between an element and the others around it.
+                    This would be adjusting the "margin", or the space around an element.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+            &ltdiv class="block">
+                I have a red background AND white text!
+            &lt/div>
+            
+            &ltstyle>
+                .block {
+                    background: red;
+                    color: white;
+                    padding: 10px;
+                }
+            &lt/style>
+                            </code></pre>
+            </div>
+            <div class="code-card">
+                <div class="block-text-padding-margin">
+                    I have a red background AND white text!
+                </div>
+
+                <style>
+                    .block-text-padding-margin {
+                        background: red;
+                        color: white;
+                        padding: 10px;
+                        margin: 20px;
+                    }
+                </style>
+            </div>
+        </div>
+        <!-- End of pair -->
+
+        <!-- First code snippet/example pairing -->
+        <div class="code-pair">
+            <div class="explanation">
+                <h4>Hover</h4>
+                <p>The style of elements can change based on certain events. For example, when a user hovers over the
+                    following element, the background and text colors will change.</p>
+            </div>
+            <div class="sample">
+                <pre><code class="html">
+                &ltdiv class="block">
+                    I have a red background AND white text!
+                &lt/div>
+                
+                &ltstyle>
+                    .block {
+                        background: red;
+                        color: white;
+                        padding: 10px;
+                    }
+
+                    .block:hover {
+                        background: darkred;
+                        color: yellow;
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                &lt/style>
+                                </code></pre>
+            </div>
+            <div class="code-card">
+                <div class="block-text-padding-margin-hover">
+                    I have a red background AND white text!
+                </div>
+
+                <style>
+                    .block-text-padding-margin-hover {
+                        background: red;
+                        color: white;
+                        padding: 10px;
+                        margin: 20px;
+                    }
+
+                    .block-text-padding-margin-hover:hover {
+                        background: darkred;
+                        color: yellow;
+                        padding: 10px;
+                        margin: 20px;
+                        cursor: pointer;
+                    }
+                </style>
             </div>
         </div>
         <!-- End of pair -->
